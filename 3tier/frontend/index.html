@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Students Records</title>
+</head>
+<body>
+<h1>Student Records</h1>
+
+<button onclick="loadStudents()">Load Students</button>
+
+<div id="output"></div>
+
+<script>
+function loadStudents() {
+	fetch("http:localhost:8080")
+		.then(response => response.text())
+		.then(data => {
+			document.getElementById("output").innerHTML =data;
+		});
+}
+</script>
+
+</body>
+</html>
