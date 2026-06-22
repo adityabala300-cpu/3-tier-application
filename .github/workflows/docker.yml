@@ -1,1 +1,14 @@
-
+name: Docker Build 
+on:
+ push:
+  branches:
+    -  main
+jobs:
+ build:
+  runs-on: ubuntu-latest
+  steps:
+   - uses: actions/checkout@v4
+   - name: Build Backend
+     run: docker build -t student-backend ./3tier/backend
+   - name: Build Frontend
+     run: docker build -t student-frontend./3tier/frontend
