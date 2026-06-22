@@ -1,5 +1,5 @@
 # 3-Tier Docker Application
-##Overview 
+## Overview 
 This project demonstrates a 3-tier application architecture using Docker Containers.
 ## Architecture 
 Frontend (HTML + JavaScript) -> Backend (PHP API) -> MySQL Database
