@@ -11,4 +11,4 @@ jobs:
    - name: Build Backend
      run: docker build -t student-backend ./3tier/backend
    - name: Build Frontend
-     run: docker build -t student-frontend./3tier/frontend
+     run: docker build -t student-frontend ./3tier/frontend
